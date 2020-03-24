@@ -20,6 +20,12 @@ namespace tabuleiro
         {
             return Pecas[linhas, colunas];
         }
+
+        public void ColocarPeca(Peca p, Posicao pos)
+        {
+            Pecas[pos.Linhas, pos.Colunas] = p;
+            p.Posicao = pos;
+        }
     }
 
     

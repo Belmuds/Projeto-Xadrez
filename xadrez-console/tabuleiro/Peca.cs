@@ -15,9 +15,9 @@ namespace tabuleiro
         public int QtdMovimentos { get; protected set; }//Só pode ser alterado por ela e pelas suas sub-classes
         public Tabuleiro Tab { get;protected set; }
 
-        public Peca(Posicao posicao, Cor cor, Tabuleiro tab)
+        public Peca(Tabuleiro tab, Cor cor)
         {
-            Posicao = posicao;
+            Posicao = null;
             Cor = cor;
             Tab = tab;
             QtdMovimentos = 0;
