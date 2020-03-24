@@ -7,7 +7,7 @@ namespace xadrez_console
     {
         static void Main(string[] args)
         {
-            try
+            /*try
             {
                 Tabuleiro tab = new Tabuleiro(8, 8);
                 //Tela.ImprimirTabuleiro(tab);
@@ -21,7 +21,17 @@ namespace xadrez_console
             catch (TabuleiroException e)
             {
                 Console.WriteLine("Erro: " + e.Message);
-            }
+            }*/
+
+            PosicaoXadrez pos = new PosicaoXadrez('a', 1);
+            Console.WriteLine(pos);
+
+            Console.WriteLine(pos.ToPosicao());
+
+            PosicaoXadrez pos2 = new PosicaoXadrez('c', 7);
+            Console.WriteLine(pos2);
+            Console.WriteLine(pos2.ToPosicao());
+
         }
     }
 }
