@@ -7,8 +7,8 @@ namespace tabuleiro
 {
     class Peca
     {
-        private int linhas;
-        private int colunas;
+        private int Linhas;
+        private int Colunas;
 
         public Posicao Posicao { get; set; }
         public Cor Cor { get; set; }
@@ -21,6 +21,11 @@ namespace tabuleiro
             Cor = cor;
             Tab = tab;
             QtdMovimentos = 0;
+        }
+
+        public void IncrementarQtdMovimento()
+        {
+            QtdMovimentos++;
         }
 
         
